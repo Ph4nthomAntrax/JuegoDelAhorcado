@@ -12,16 +12,11 @@ Challenge ONE Sprint 02: Crea tu propio juego del ahorcado con Javascript.
 - Las letras equivocadas deben aparecer en la pantalla, pero no pueden aparecer de forma repetida;
 - Las letras correctas deben aparecer en la pantalla encima de los guiones, en la posición correcta em relación a la palabra.
 
+-----
+
 **Extras:**
 - La página debe tener un campo para inserción de texto con la finalidad de adicionar nuevas palabras al juego, e un botón "Agregar palabra". 
 
------
 
-Tenemos un periodo de tiempo de cuatro semanas para desarrollar el proyecto y vamos a trabajar con el sistema ágil de desarrollo, utilizando el Trello de la siguiente forma: 
 
-1. La columna **Listos para iniciar** presenta las tarjetas con elementos que aun no fueron desarrollados.
-2. En la columna **En Desarrollo** estarán los elementos que estés desarrollando en el momento. Al iniciar una tarea, podrás mover la tarjeta que contiene dicha tarea para esta columna.
-3. En la columna **Pausado** estarán los elementos que comenzaste a desarrollar, pero necesitaste parar por algún motivo.
-4. Por fin, en la columna **Concluido** estarán los elementos ya concluidos.
 
-El Trello es una herramienta de uso individual para que puedas controlar el progreso de tus actividades, pero no será evaluada.
