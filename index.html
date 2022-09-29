@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <title>Challenge Juego del Ahorcado</title>
+</head>
+
+<body onload="cleanScene()">
+    <header class="header-content">
+        <img src="/images/alura_logo.png" alt="alura-logo" id="alura-logo" class="alura-logo">
+        <h1 class="titles_h1">Juego del Ahorcado</h1>
+    </header>
+    <main>
+        <div id="button-container" class="container">
+            <input type="button" value="Iniciar Juego" id="start" class="button" onclick="iniciarJuego()">
+            <input type="button" value="Agregar nueva palabra" id="add_word" class="button" onclick="verDivPalabras()">
+        </div>
+        <div id="scene-container" class="canvas-container">
+            <canvas id="myCanvas" class="canvas">
+                <img class="hangman" id="hang" src="images/hangman/1e.png" alt="scenario">
+                <img class="hangman" id="hanged-1" src="images/hangman/2e.png" alt="scenario">
+                <img class="hangman" id="hanged-2" src="images/hangman/4e.png" alt="scenario">
+                <img class="hangman" id="hanged-3" src="images/hangman/5e.png" alt="scenario">
+                <img class="hangman" id="hanged-4" src="images/hangman/6e.png" alt="scenario">
+                <img class="hangman" id="hanged-5" src="images/hangman/7e.png" alt="scenario">
+            </canvas>
+            <textarea name="" id="failed-word"  class="failed-word" readonly onmousedown="return false;" cols="30" rows="10" ></textarea>
+        </div> 
+        <div class="underscore-container">
+            <input type="text" id="word-underscore" class="underscore" readonly onmousedown="return false;">
+            <input type="text" name="" id="word-input" class="word-input">
+            <input type="button" value="Buscar" id="search" class="button" onclick="searchWord()"> 
+            <input type="button" value="Volver a Jugar" id="repeat" class="button">
+        </div> 
+        <div id="newWord-container" class="container">
+            <label for="newWord"></label>
+            <input type="text" name="newWord" id="newWord" class="word-input"> 
+            <input type="button" value="Agregar" id="addWord" class="button" onclick="addNewWord()">
+            <input type="button" value="Jugar" id="start-add" class="button" onclick="iniciarJuego()">
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p class="copyright"></p>
+            <p class="copyright">&copy;DEVELOPED BY LUIS SOTO 🖥️</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
